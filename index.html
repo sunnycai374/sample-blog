@@ -1,395 +1,92 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Shanghai Travel Blog</title>
-
- 
-
-<style>
-
-body {
-
-  margin: 0;
-
-  font-family: "Segoe UI", sans-serif;
-
-  background: #f6f6f6;
-
-  color: #333;
-
-}
-
- 
-
-/* NAVBAR */
-
-nav {
-
-  background: rgba(0,0,0,0.7);
-
-  position: fixed;
-
-  width: 100%;
-
-  z-index: 999;
-
-}
-
-nav ul {
-
-  display: flex;
-
-  justify-content: center;
-
-  list-style: none;
-
-  padding: 10px;
-
-  margin: 0;
-
-}
-
-nav ul li {
-
-  margin: 0 15px;
-
-}
-
-nav ul li a {
-
-  color: white;
-
-  text-decoration: none;
-
-  font-weight: bold;
-
-}
-
-nav ul li a:hover {
-
-  color: #ffd700;
-
-}
-
- 
-
-/* HERO */
-
-header {
-
-  height: 90vh;
-
-  background: url("https://images.unsplash.com/photo-1506157786151-b8491531f063") no-repeat center/cover;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  color: white;
-
-  text-align: center;
-
-}
-
- 
-
-header h1 {
-
-  font-size: 60px;
-
-  margin: 0;
-
-  text-shadow: 0 0 10px black;
-
-}
-
- 
-
-header p {
-
-  font-size: 20px;
-
-}
-
- 
-
-/* STAMP STYLE */
-
-.stamp {
-
-  background: white;
-
-  margin: 40px auto;
-
-  padding: 20px;
-
-  width: 80%;
-
-  border: 8px dashed #999;
-
-  border-radius: 12px;
-
-  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
-
-  animation: fadeIn 1.2s ease-in;
-
-}
-
- 
-
-/* SECTIONS */
-
-section h2 {
-
-  text-align: center;
-
-  margin-bottom: 15px;
-
-}
-
- 
-
-/* IMAGE STYLE */
-
-img {
-
-  width: 100%;
-
-  border-radius: 10px;
-
-  margin-top: 10px;
-
-  transition: transform 0.4s ease;
-
-}
-
- 
-
-img:hover {
-
-  transform: scale(1.05);
-
-}
-
- 
-
-/* FOOTER */
-
-footer {
-
-  text-align: center;
-
-  padding: 20px;
-
-  background: #222;
-
-  color: white;
-
-}
-
- 
-
-/* ANIMATION */
-
-@keyframes fadeIn {
-
-  from { opacity: 0; transform: translateY(30px);}
-
-  to { opacity: 1; transform: translateY(0);}
-
-}
-
- 
-
-/* MOBILE */
-
-@media(max-width: 768px){
-
-  header h1 {
-
-    font-size: 40px;
-
-  }
-
-}
-
-</style>
-
-</head>
-
- 
-
-<body>
-
- 
-
-<nav>
-
-<ul>
-
-  <li><a href="#about">About</a></li>
-
-  <li><a href="#places">Places</a></li>
-
-  <li><a href="#food">Food</a></li>
-
-  <li><a href="#tips">Tips</a></li>
-
-</ul>
-
-</nav>
-
- 
-
-<header>
-
-<div>
-
-<h1>Shanghai Wanderlust ✈️</h1>
-
-<p>A journey through China's most futuristic city</p>
-
-</div>
-
-</header>
-
- 
-
-<main>
-
- 
-
-<section id="about" class="stamp">
-
-<h2>About Shanghai</h2>
-
-<p>
-
-Shanghai is a vibrant blend of modern skyscrapers and traditional culture.
-
-From the iconic skyline of Pudong to the historic charm of the Bund,
-
-this city offers an unforgettable mix of east and west.
-
-</p>
-
-<img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c" alt="Shanghai skyline">
-
-</section>
-
- 
-
-<section id="places" class="stamp">
-
-<h2>Top Places to Visit</h2>
-
- 
-
-<h3>The Bund</h3>
-
-<p>Walk along the Huangpu River and enjoy Shanghai’s skyline at night.</p>
-
-<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39" alt="The Bund">
-
- 
-
-<h3>Yu Garden</h3>
-
-<p>A classical Chinese garden filled with bridges, koi ponds, and history.</p>
-
-<img src="https://images.unsplash.com/photo-1600830650819-8f4db1c06c09" alt="Yu Garden">
-
- 
-
-<h3>Shanghai Tower</h3>
-
-<p>Experience breathtaking views from one of the tallest buildings in the world.</p>
-
-<img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Shanghai Tower">
-
- 
-
-</section>
-
- 
-
-<section id="food" class="stamp">
-
-<h2>Must-Try Food</h2>
-
- 
-
-<h3>Xiaolongbao (Soup Dumplings)</h3>
-
-<p>Shanghai’s most famous dish—delicate dumplings filled with hot soup.</p>
-
-<img src="https://images.unsplash.com/photo-1546069901-eacef0df6022" alt="Xiaolongbao">
-
- 
-
-<h3>Shengjianbao</h3>
-
-<p>Crispy pan-fried buns with juicy pork filling.</p>
-
-<img src="https://images.unsplash.com/photo-1604908176997-431221d70d21" alt="Shengjianbao">
-
- 
-
-<h3>Scallion Oil Noodles</h3>
-
-<p>A simple yet flavorful local favorite.</p>
-
-<img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc" alt="Shanghai noodles">
-
- 
-
-</section>
-
- 
-
-<section id="tips" class="stamp">
-
-<h2>Travel Tips</h2>
-
-<ul>
-
-<li>Use metro – fast and cheap 🚇</li>
-
-<li>Carry cash + digital payment apps</li>
-
-<li>Visit in spring or autumn for best weather</li>
-
-<li>Download maps offline (Google Maps may be limited)</li>
-
-</ul>
-
-<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Shanghai street">
-
-</section>
-
- 
-
-</main>
-
- 
-
-<footer>
-
-<p>Made with ❤️ for travel lovers | Shanghai Blog</p>
-
-</footer>
-
- 
-
-</body>
-
-</html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shanghai Silk & Steel — Modern Chinese Motif Travel Blog</title>
+  <meta name="description" content="A modern Shanghai travel blog with contemporary Chinese motifs, rich storytelling, modal popups, and a detailed one-day guide." />
+  <style>
+    :root {
+      --bg: #120304;
+      --bg-soft: #1d0608;
+      --panel: rgba(34, 6, 8, 0.78);
+      --panel-2: rgba(49, 10, 13, 0.74);
+      --card: rgba(255, 248, 235, 0.065);
+      --stroke: rgba(255, 220, 175, 0.18);
+      --text: #fff8ef;
+      --muted: #e0c6b5;
+      --soft: #c59d88;
+      --gold: #efc56f;
+      --gold-2: #ffd98e;
+      --red: #ad1f24;
+      --red-bright: #d53b40;
+      --shadow: 0 24px 60px rgba(0,0,0,.45);
+      --radius: 26px;
+      --radius-sm: 18px;
+      --max: 1320px;
+    }
+ 
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 520px at 12% 0%, rgba(213,59,64,.17), transparent 60%),
+        radial-gradient(800px 500px at 100% 15%, rgba(239,197,111,.07), transparent 44%),
+        radial-gradient(900px 600px at 85% 100%, rgba(173,31,36,.18), transparent 50%),
+        linear-gradient(180deg, #160507 0%, #100304 36%, #140607 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+ 
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      pointer-events: none;
+      inset: auto;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(28px);
+      opacity: .26;
+    }
+    body::before { top: 90px; right: -120px; background: radial-gradient(circle, rgba(213,59,64,.95), transparent 64%); }
+    body::after { left: -110px; bottom: 60px; background: radial-gradient(circle, rgba(239,197,111,.45), transparent 62%); }
+ 
+    .motif-cloud,
+    .motif-lattice {
+      position: fixed;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .12;
+    }
+    .motif-cloud {
+      width: 240px;
+      height: 120px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 110'%3E%3Cpath d='M33 63c1-15 14-26 30-26 5 0 10 1 14 3 6-16 21-27 39-27 17 0 33 10 39 25 2-1 5-1 7-1 16 0 29 12 29 27s-13 27-29 27H56C42 91 31 80 33 63Z' fill='none' stroke='%23efc56f' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25 67c-9 0-16 6-16 14 0 8 7 14 16 14' fill='none' stroke='%23efc56f' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M192 38c9 0 17 7 17 16s-8 16-17 16' fill='none' stroke='%23efc56f' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+    .motif-lattice {
+      width: 190px;
+      height: 190px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23efc56f' stroke-width='4'%3E%3Cpath d='M80 8L152 80L80 152L8 80Z'/%3E%3Cpath d='M80 28L132 80L80 132L28 80Z'/%3E%3Cpath d='M80 48L112 80L80 112L48 80Z'/%3E%3Cpath d='M80 8V152M8 80H152'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .motif-1 { top: 110px; left: 3vw; }
+    .motif-2 { top: 540px; right: 4vw; transform: rotate(180deg); }
+    .motif-3 { bottom: 160px; left: 2vw; }
+    .motif-4 { bottom: 90px; right: 6vw; }
+ 
+    .container { width: min(calc(100% - 32px), var(--max)); margin-inline: auto; }
+ 
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+ 
+ 
